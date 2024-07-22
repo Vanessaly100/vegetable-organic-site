@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assests/css/style.css">
+    <title>Organic Store</title>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img
+                src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Juice
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Groceries
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Everything
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- right start-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item euro">
+                    <a class="nav-link text-success" href="#">£0.00</a>
+                </li>
+                
+                <button type="button" class="btn btn-transparent btn-fit-content position-relative border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="lightgreen" class="bi bi-basket2-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" />
+                    </svg>
+                    <span class="position-absolute top-50 start-70 translate-middle badge rounded-pill bg-success">
+                        0
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+<!-- -------carousel---------- -->
+<section class="carousel-section ">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+            <img src="https://cdn.pixabay.com/photo/2016/10/03/00/33/chestnut-1710748_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="mt-5 fs-3 text-uppercase">Organic Store</p>
+                <h1 class="display-1 fw-bolder text-capitalize">Chestnut fruits</h1>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2016/07/16/20/48/peaches-1522680_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Fresh Peaches</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2018/06/10/21/29/white-currant-3467373_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">White currant fruit</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/organic-honey-600x600.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Sweet Honey</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2023/10/10/16/05/grapes-8306833_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Grapes, Blue grapes</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Fresh fruit</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2024/04/19/12/27/ai-generated-8706248_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Cherries Nature</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+        <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2016/12/10/21/28/plums-1898196_1280.jpg"
+                class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Organic Store</p>
+                <p class="display-1 fw-bolder text-capitalize">Plums Apricots</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</section>
+<section class="first-section  px-3 ">
+    <!--  -->
+    <div class="container container-custom mt-5">
+        <div class="row g-5 flex-column-reverse flex-lg-row align-items-center ">
+            <div class="col-12  col-sm-12 col-lg-6 d-flex justify-content-center justify-content-md-start text-center text-md-left">
+                <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div
+                class="col-12  col-sm-12 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-left mb-3 mb-md-0">
+                <div class="imgwrapper">
+                <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png"
+                    alt="Responsive image"></div>
+                
+                <span class="pt-5">Best Quality Products</span>
+                <h1 class="pt-4 fw-bolder display-5 text-md-start">Join The Organic Movement!</h1>
+                <p class="pt-4 text-md-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                    pulvinar dapibus
+                    leo.</p>
+                <button class="btn btn-success px-4 py-2 fs-5 mt-4" data-bs-toggle="modal" data-bs-target="#booking-modal"><span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg></span>Shop now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-two">
+    <div class="container-fluid px-3 text-center text-light">
+        <div class="row gx-3 gy-4">
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="p-3 bg-dark rounded-2">
+                    <div class="item-desc">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightgreen" class="bi bi-truck"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                        </svg></div>
+                        <div>
+                            <h4>Free Shipping</h4>
+                            <p>Above $5 only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="p-3  bg-dark rounded-2">
+                    <div class="item-desc">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="lightgreen" class="bi bi-person-rolodex"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                        <path
+                            d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1z" />
+                    </svg>
+                </div>
+                    <div>
+                        <h4>Certified Organic</h4>
+                        <p>100% Guarantee</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="p-3 bg-dark rounded-2">
+                    <div class="item-desc">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="lightgreen" class="bi bi-save2"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v4.5h2a.5.5 0 0 1 .354.854l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 5.5 6.5h2V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1z" />
+                    </svg>
+                </div>
+                    <div>
+                        <h4>Huge Savings</h4>
+                        <p>At lower price</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="p-3  bg-dark rounded-2">
+                    <div class="item-desc">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightgreen" class="bi bi-arrow-repeat"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                            <path fill-rule="evenodd"
+                                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Easy Return</h4>
+                        <p>No Question Asked</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-three">
+    <div class="sec-3-head d-flex align-items-center flex-column">
+    <h2 class="text-center">Best Selling Products</h2>
+    <div class="imgwrapper">
+        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+    </div>
+    </div>
+    <!-- ---------------------------------------- -->
+    <div class="container ">
+        <div class="row gy-4">
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="card" style="width: 100%;">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-600x600.jpg"
+                        class="card-img-top" alt="Natural Extracted Edible Oil">
+                    <div class="card-body">
+                        <a class="text-secondary small">Groceries</a>
+                        <h5 class="card-title">Natural Edible Oil</h5>
+                        <div>
+                        </div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h6> £25.00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="card" style="width: 100%;">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-600x600.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="text-secondary small">Groceries</a>
+                        <h5 class="card-title">Assorted Coffee</h5>
+                        <div>
+                        </div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h6>£35.00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto">
+                <div class="card" style="width: 100%;">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-600x600.jpg"
+                        class="card-img-top" alt="Hand sanitizer">
+                    <div class="card-body">
+                        <a class="text-secondary small">Groceries</a>
+                        <h5 class="card-title"> Red Chillies</h5>
+                        <div>
+                        </div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h6>£19.00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-6  col-lg-3 mb-3 mx-auto position-relative">
+            <div class="card" style="width: 100%;">
+                <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-600x600.jpg"
+                    class="card-img-top" alt="Hand sanitizer">
+                    <span class="position-absolute top-20 start-50 translate-middle p-2 bg-success text-light  rounded-circle">
+                        sales!
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                <div class="card-body">
+                    <a class="text-secondary small">Groceries</a>
+                    <h5 class="card-title">Hand Sanitizers</h5>
+                    <div>
+                    </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h6>£15.00</h6>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="containerleave">
+    <div class="imgwrapperleave rotate-custom">
+        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/basil-leaf.png"
+            alt="organic leave">
+    </div>
+</div>
+<section class="section-four">
+    <div class="container ">
+        <div class="row  gy-4 ">
+            <div class="col-11 col-sm-12 col-md-12 col-lg-4 mb-3 mx-auto">
+                <div class="sec-4-desc p-4 bg-white border rounded-2 h-100">
+                    <h4>Farm Fresh Fruits</h4>
+                    <p>Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                    <button type="button" class="btn btn-success"> <span class="pe-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></span>Shop Now</button>
+                    <div class="sec-4-img mt-2">
+                        <img src="https://img.freepik.com/free-vector/lemons-green-leaves-isolated-white_88138-102.jpg?ga=GA1.1.1989629117.1716377686&semt=ais_user" alt="lemon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-12 col-lg-4 mb-3 mx-auto">
+                <div class="sec-4-desc p-4 bg-white border rounded-2 h-100">
+                    <h4>Farm Fresh Fruits</h4>
+                    <p>Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                    <button type="button" class="btn btn-success"> <span class="pe-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></span>Shop Now</button>
+                    <div class="sec-4-img mt-2">
+                        <img src="https://onempa.com/wp-content/uploads/2023/07/Butterhead-lettuce-scaled.jpg"
+                            alt="lemon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-12 col-md-12 col-lg-4 mb-3 mx-auto h-100">
+                <div class="sec-4-desc p-4 bg-white border rounded-2 h-100">
+                    <h4>Farm Fresh Fruits</h4>
+                    <p>Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
+                    <button type="button" class="btn btn-success"> <span class="pe-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg></span>Shop Now</button>
+                    <div class="sec-4-img mt-2 ">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/339/315/non_2x/soy-beans-in-bowl-wood-free-png.png" alt="lemon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- black container -->
+     <div class="sec-black-bg">
+    <div class="container-fluid  bg-black">
+        <div class="row gy-4">
+            <div class="col-8 justify-content-between align-items-center py-5 ">
+                <h2 class="text-light fw-bolder py-3">Get 25% Off On Your First Purchase!</h2>
+            </div>
+            <div class=" col-4 d-flex justify-content-end align-items-center ">
+                <button class="btn btn-success px-4 py-2 fs-5"> <span class="pe-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg></span>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class=" bottom-arrow d-flex justify-content-center align-items-center">
+        <span class="bottom-arrow-container"></span>
+    </div>
+    <h4 class="pt-1 text-center fw-bold ">Try It For Free. No Registration Needed.</h4>
+</section>
+
+<section class="section-five text-center">
+    <div class="sec-5-desc d-flex justify-content-center flex-column  align-items-center">
+        <h2 class="pt-3">Trending Products</h2>
+        <div class="imgwrapper mb-4">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="leave">
+        </div>
+    </div>
+<div class="container">
+        <!-- first slide -->
+            <div class="row gy-5">
+                <div class="col-lg-3 col-md-6 col-sm-11 mx-auto">
+                    <div class="card card-hover h-100" style="width: 100%;">
+                        <div class="carou-img-wrapper">
+                            <img src="https://cdn.pixabay.com/photo/2024/07/16/06/34/ai-generated-8898416_1280.png"
+                                class="d-block " alt="Grape fruit">
+                        </div>
+                        <div class="card-body">
+                            <a class="text-secondary small">Groceries</a>
+                            <h5 class="card-title">Grape fruit</h5>
+                            <div>
+                            </div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <h6>£15.00</h6>
+                        </div>
+                        <div class="overlay">
+                            <div class="social-icons bg-transparent">
+                                <a href="#" class="text-white" ><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mx-auto ">
+                    <div class="card card-hover h-100" style="width: 100%;">
+                        <div class="carou-img-wrapper">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/02/03/14/fuji-apple-8228073_1280.jpg"
+                                class="card-img-top " alt="Apples Fruits">
+                        </div>
+                        <div class="card-body">
+                            <a class="text-secondary small">Groceries</a>
+                            <h5 class="card-title">Apples Fruits</h5>
+                            <div>
+                            </div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <h6>£15.00</h6>
+                        </div>
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mx-auto ">
+                    <div class="card card-hover h-100">
+                        <div class="carou-img-wrapper">
+                            <img src="https://cdn.pixabay.com/photo/2014/04/10/11/06/tomatoes-320860_1280.jpg"
+                                class="d-block " alt="Tomatoes">
+                        </div>
+                        <div class="card-body">
+                            <a class="text-secondary small">Groceries</a>
+                            <h5 class="card-title">Tomatoes</h5>
+                            <div>
+                            </div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <h6>£15.00</h6>
+                        </div>
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mx-auto">
+                    <div class="card card-hover h-100">
+                        <div class="carou-img-wrapper">
+                            <img src="https://cdn.pixabay.com/photo/2018/07/12/16/59/raspberry-3533909_1280.jpg" class="d-block "
+                                alt="Raspberry Fruit">
+                        </div>
+                        <div class="card-body">
+                            <a class="text-secondary small">Groceries</a>
+                            <h5 class="card-title">Raspberry Fruit</h5>
+                            <div>
+                            </div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <h6>£15.00</h6>
+                        </div>
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+<!-- section  -->
+<div class="container mt-4">
+    <!-- second slide -->
+    <div class="row gy-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto">
+            <div class="card card-hover h-100">
+                <div class="carou-img-wrapper">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-600x600.jpg"
+                        class="d-block " alt="Grape fruit">
+                </div>
+                <div class="card-body">
+                    <a class="text-secondary small">Groceries</a>
+                    <h5 class="card-title">Grape fruit</h5>
+                    <div>
+                    </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h6>£15.00</h6>
+                </div>
+                <div class="overlay">
+                    <div class="social-icons bg-transparent">
+                        <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto ">
+            <div class="card card-hover h-100">
+                <div class="carou-img-wrapper">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-600x600.jpg"
+                        class="d-block " alt="Apples Fruits">
+                </div>
+                <div class="card-body">
+                    <a class="text-secondary small">Groceries</a>
+                    <h5 class="card-title">Apples Fruits</h5>
+                    <div>
+                    </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h6>£15.00</h6>
+                </div>
+                <div class="overlay">
+                    <div class="social-icons">
+                        <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto ">
+            <div class="card card-hover h-100">
+                <div class="carou-img-wrapper">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-600x600.jpg" class="d-block "
+                        alt="Tomatoes">
+                </div>
+                <div class="card-body">
+                    <a class="text-secondary small">Groceries</a>
+                    <h5 class="card-title">Tomatoes</h5>
+                    <div>
+                    </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h6>£15.00</h6>
+                </div>
+                <div class="overlay">
+                    <div class="social-icons">
+                        <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto">
+            <div class="card card-hover h-100">
+                <div class="carou-img-wrapper">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/06/14/59/plums-1649316_1280.jpg"
+                        class="d-block " alt="Raspberry Fruit">
+                </div>
+                <div class="card-body">
+                    <a class="text-secondary small">Groceries</a>
+                    <h5 class="card-title">Raspberry Fruit</h5>
+                    <div>
+                    </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h6>£15.00</h6>
+                </div>
+                <div class="overlay">
+                    <div class="social-icons">
+                        <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- section six -->
+<section class="section-six position-relative">
+    <div class="sec-5-desc d-flex justify-content-center flex-column  align-items-center">
+        <h2 class="pt-3">Customers Reviews</h2>
+        <div class="imgwrapper mb-4">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png"
+                alt="leave">
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row gy-5">
+            <div class="col-lg-3 col-md-11 col-sm-11 mx-auto  align-content-center">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p class="card-text">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus, luctus
+                            nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <div class="sec-6-img"><img
+                                src="https://media.licdn.com/dms/image/C5603AQH7bECo3YlCvg/profile-displayphoto-shrink_400_400/0/1663580213725?e=1726704000&v=beta&t=bdIQuTZ1k_Cbxjpm5wbUO4sSaNa6DLZYhTdnD4mI4bA"
+                                alt=""></div>
+                        <span>Mila Kunis</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-11 col-sm-11 mx-auto">
+                <div class="card bg-dark text-white">
+                    <img src="https://cdn.pixabay.com/photo/2014/10/22/21/54/bell-peppers-499068_1280.jpg" class="card-img h-100" alt="Card image">
+                    <div class="card-img-overlay card-img-overlay-custom">
+                        <div class="text-center ">
+                            <div class="social-icons sec-6-icon">
+                                <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <h2 class="py-3 px-3">Deal Of The Day 15% Off On All Vegetables!</h2>
+                            <p class="px-3">I am text block. Click edit button to change this tex em ips.</p>
+                            <button type="button" class="btn btn-outline-success">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-11 col-sm-11 mx-auto align-content-center ">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p class="card-text">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus, luctus
+                            nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <div class="sec-6-img"><img
+                                src="https://media.licdn.com/dms/image/D4E03AQHlnSagANO-0A/profile-displayphoto-shrink_400_400/0/1669041750347?e=1726704000&v=beta&t=emu4oGE6EjePr3AkrpgVoRVJdOvrlG2vEx633oxlFY0"
+                                alt=""></div>
+                        <span>Mike Sendler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlyimage">
+        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+    </div>
+
+    <!--  --------logos------------->
+    <div class="container text-center justify-content-center align-items-center">
+        <div class="row align-items-center gy-4 pt-5 align-content-center ">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="" style="width: 100%;">
+                    <p class="fw-bold h5 pt-5">Featured Brands:</p>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex  justify-content-center">
+                
+                <div class="logo-img">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-4.svg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6l  d-flex  justify-content-center">
+                <div class="logo-img">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-1.svg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex  justify-content-center">
+                <div class="logo-img">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-5.svg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex  justify-content-center ">
+                <div class="logo-img">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-2.svg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex  justify-content-center">
+                <div class="logo-img">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-3.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="bg-black py-5">
+    <div class="container text-center">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+                <div class="footer-1-dec" style="width: 100%;">
+                    <div class="footer-logo ">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/organic-store-white-logo.png" class="card-img-top" alt="..."></div>
+                    <div class="card-body">
+                        <p class="card-text text-secondary pt-4">Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex.
+                        Suspendisse quis faucibus urna. Suspendisse pellentesque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+                <div class="footer-1-dec" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Quick Links</h5>
+                        <p class="card-text text-secondary pt-4"><a href="About" class="text-secondary">About</a><br> <a href="Cart"class="text-secondary" >Cart</a> <a href="Checkout" class="text-secondary">Checkout</a><br> <a
+                            href="Contact" class="text-secondary">Contact</a> <br> <a href="Home"class="text-secondary" >Home</a> <br> <a href="My account" class="text-secondary">My account</a> <br> <a href="Shop"class="text-secondary" >Shop</a></p>
+
+                        <h5 class="card-title text-secondary ">Site Links</h5>
+                        <p class="card-text text-light pt-4"><a href="Privacy Policy" class="text-secondary">Privacy Policy</a><br> <a href="Shipping Details" class="text-secondary">Shipping Details</a> <a href="Offers Coupons"class="text-secondary" >Offers Coupons</a><br> <a href="Terms & Conditions"class="text-secondary" >Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12  mx-auto">
+                <div class="footer-1-dec" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Download Our Mobile App</h5>
+                        <p class="card-text text-secondary pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non
+                        tincidunt libero interdum sit amet.</p>
+                
+                        <h5 class="card-title text-secondary ">Quick Links</h5>
+                        <p class="card-text text-light pt-4"><a href="Know More About Us" class="text-secondary">Know More About Us</a><br> <a
+                                href="Visit Store" class="text-secondary">Visit Store</a> <a href="Let’s Connect"
+                                class="text-secondary">Let’s Connect</a><br> <a href="Locate Stores" class="text-secondary">Locate Stores</a></p>
+                                <div class="btnn">
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="copyright-container d-flex justify-content-between px-3  py-4">
+        <div class="copy-desc">
+            <p class="">copyright&copy;2024 <span>Organic Store</span></p>
+        </div>
+        <div class="footer-icons">
+            <span class="">
+                <i class="fa-solid fa-clover"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assests/js/main.js"></script>
+</body>
+</html>
